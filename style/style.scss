@@ -402,6 +402,14 @@ strong {
         flex-wrap: wrap;
     }
 
+    .top-nav {
+        
+        justify-content: center;
+        background-color: $dark-bg-color;
+        opacity: 0.6;
+        position: fixed;
+        width: 500px;
+    }
 
   /* hamburger */
 
