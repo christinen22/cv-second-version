@@ -388,8 +388,15 @@ strong {
     }
 }
 
-@media screen and (max-width: 625px) {
 
+@media screen and (max-width: 700px) {
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+    
     .top {
         display: flex;
         flex-direction: column;
@@ -402,14 +409,24 @@ strong {
         flex-wrap: wrap;
     }
 
+    .top-nav {
+        
+        justify-content: center;
+        background-color: $dark-bg-color;
+        opacity: 0.6;
+        position: fixed;
+        width: 100%;
+    }
 
   /* hamburger */
 
     .menu {
+        display: none;
         position: absolute;
         background-color: $dark-bg-color;
         right: 0;
         left: 0;
+        font-size: 1.1em;
         margin-bottom: 50px;
 
     }
@@ -443,9 +460,9 @@ strong {
 
     h1 {
         font-size: 50px;
-        margin-left: auto;
         margin-top: 10px;
         text-align: center;
+        
     }
 
     .info-box, .footer-container, .boxes {
@@ -511,4 +528,3 @@ strong {
             font-size: 20px;
         }
     } 
-
