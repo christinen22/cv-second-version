@@ -261,7 +261,7 @@ blockquote::after {
     position: absolute;
     content: '”';
     color:#E7E91A;
-    font-size: 5em;¨
+    font-size: 5em;
     line-height: 0;
     bottom: -43px;
     right: 30px;
@@ -402,24 +402,14 @@ strong {
         flex-wrap: wrap;
     }
 
-    .top-nav {
-        
-        justify-content: center;
-        background-color: $dark-bg-color;
-        opacity: 0.6;
-        position: fixed;
-        width: 500px;
-    }
 
   /* hamburger */
 
     .menu {
-        display: none;
         position: absolute;
         background-color: $dark-bg-color;
         right: 0;
         left: 0;
-        text-align: center;
         margin-bottom: 50px;
 
     }
@@ -521,3 +511,4 @@ strong {
             font-size: 20px;
         }
     } 
+
