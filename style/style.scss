@@ -71,11 +71,9 @@ input[type=checkbox] {
 
 .top-nav {
     display: flex;
-    padding: 0;
-    margin: 1rem 0;
+    margin: 5px;
     justify-content: center;
     background-color: $dark-bg-color;
-    opacity: 0.6;
     position: fixed;
     width: 1200px;
 }
@@ -227,7 +225,6 @@ article a {
 }
 
 section .quote {
-    padding: 0 20px;
     display: flex;
     height: 50px;
    
@@ -235,7 +232,6 @@ section .quote {
 
 blockquote {
     position: relative;
-    padding: 30px 0;
     width: 100%;
     max-width: 500px;
     z-index: 1;
@@ -253,17 +249,21 @@ blockquote p {
 } 
 
 blockquote p.quote {
+    margin-top: 20px;
     font-style: italic;
     font-size: 1.2em;
 }
 
-blockquote::after {
+blockquote p.credit {
+    margin-bottom: 20px;
+}
+
+blockquote::before {
     position: absolute;
     content: '”';
     color:#E7E91A;
     font-size: 5em;
     line-height: 0;
-    bottom: -43px;
     right: 30px;
 
 }
@@ -277,7 +277,6 @@ blockquote::after {
     justify-content: space-evenly;
     width: 1200px;
     background-color: $dark-bg-color;
-    opacity: 0.6;
 
 }
 
@@ -325,78 +324,70 @@ i {
 
 strong {
     text-transform: uppercase;
-    color: $hover-color;
-}
-    
-@media screen and (max-width: 1080px) {
-    h1 {
-        margin-left: 100px;
-    }
-    
+    color: #ff15B4;
 }
 
-@media screen and (max-width: 825px) {
-    h1 {
-        align-self: center;
+@media screen and (min-width: 939px) and (max-width: 1060px) {
+
+    .info-box-showcase {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 150px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 940px) {
+
+    .info {
+        margin: 50px;
+        width: 100%;
+    }
+    .info-box {
+        display: flex;
+        flex-direction: row;
+        margin-left: 150px;
+    }
+
+    .info-box img {
+        flex-basis: 350px;
+    }
+
+    .info-text p {
+        flex-direction: row;
+        width: 500px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-left: 150px;
+        width: 850px;
     }
 
     .main article {
-        width: 50%;
-        margin-bottom: 50px;
-        
-    }
-
-}
-
-@media screen and (max-width: 760px)  {
-
-    .top-nav {
-        
-        justify-content: center;
-        background-color: $dark-bg-color;
-        opacity: 0.6;
-        position: fixed;
-        width: 625px;
-    }
-    
-
-    .boxes {
         display: flex;
         flex-direction: column;
+        margin: 0 20px;
+        flex-basis: 180px;
+    }
+
+    blockquote {
+        margin-left: 300px;
     }
 
     .info-box-showcase {
         flex-wrap: wrap;
         flex-direction: column;
+        margin: 150px;
 
     }
-
-    .info-box-showcase img {
-        margin-bottom: 25px;
-        margin-top: 50px;
-        width: 100%;
-        
-        }
-
-    .main {
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-    
-    .main article {
-        flex-basis: 100%;
-    }
-}
-
-
-@media screen and (max-width: 700px) {
-    
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 350px) and (max-width: 599px) {
 
-    
     .top {
         display: flex;
         flex-direction: column;
@@ -413,9 +404,9 @@ strong {
         
         justify-content: center;
         background-color: $dark-bg-color;
-        opacity: 0.6;
         position: fixed;
         width: 100%;
+        margin: 0;
     }
 
   /* hamburger */
@@ -453,8 +444,8 @@ strong {
 
     .top img {
         margin-top: 50px;
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         align-self: center;
     }
 
@@ -462,6 +453,7 @@ strong {
         font-size: 50px;
         margin-top: 10px;
         text-align: center;
+        margin-left: 15px;
         
     }
 
@@ -472,12 +464,16 @@ strong {
 
     .info-box {
         margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     
     .info-box img {
     width: 250px;
     height: 250px;
     }
+
+    
 
     .about {
         align-self: flex-end;
@@ -506,14 +502,15 @@ strong {
         justify-content: flex-start;
         width: 100%;
         background-color: $dark-bg-color;
-        opacity: 0.6;
         padding: 10px;
+        margin: 0;
     
     }
 
     .info-box-showcase {
         flex-wrap: wrap;
         flex-direction: column;
+        margin: 20px;
 
     }
 
@@ -527,4 +524,5 @@ strong {
             margin-right: 5px;
             font-size: 20px;
         }
-    } 
+
+}
