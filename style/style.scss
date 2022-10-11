@@ -190,7 +190,7 @@ section {
 }
 
 .main div {
-    margin: 5px;
+    margin: 15px;
     background: no-repeat center top;
     background-size: 75px 75px;
     padding-top: 85px;
@@ -376,6 +376,11 @@ strong {
         flex-direction: column;
         margin: 0 20px;
         flex-basis: 220px;
+    }
+
+    .main div {
+        margin: 5px;
+
     }
 
     blockquote {
