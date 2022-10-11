@@ -185,7 +185,6 @@ section {
 }
 
 .main article {
-    flex-basis: 420px;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -328,12 +327,17 @@ strong {
     color: $font-color;
 }
 
-@media screen and (min-width: 939px) and (max-width: 1060px) {
+@media screen and (min-width: 939px)  {
 
     .info-box-showcase {
         flex-wrap: wrap;
         flex-direction: column;
         margin: 150px;
+    }
+
+    .main-article {
+        flex-basis: 420px;
+
     }
 }
 
@@ -371,7 +375,7 @@ strong {
         display: flex;
         flex-direction: column;
         margin: 0 20px;
-        flex-basis: 180px;
+        flex-basis: 220px;
     }
 
     blockquote {
@@ -398,7 +402,8 @@ strong {
     }
 
     .main {
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .top-nav {
