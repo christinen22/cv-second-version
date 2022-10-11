@@ -378,10 +378,6 @@ strong {
         flex-basis: 220px;
     }
 
-    .main div {
-        margin: 5px;
-
-    }
 
     blockquote {
         margin-left: 300px;
@@ -409,6 +405,11 @@ strong {
     .main {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .main div {
+        margin: 5px;
+
     }
 
     .top-nav {
